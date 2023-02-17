@@ -4,13 +4,15 @@ import { Logo, Input, Button } from '../components';
 import Wrapper from '../styles/styled/Landing.styled';
 
 const Landing = () => {
+
+
     return (
         <div>
+
             <Wrapper>
                 <nav>
                     <Logo></Logo>
                     <h1>Vote now or forever hold your peace</h1>
-
                 </nav>
                 <div className="full-screen-container">
                     <div className="login-container">
@@ -25,7 +27,6 @@ const Landing = () => {
             </Wrapper>
 
         </div>
-
 
     )
 }
