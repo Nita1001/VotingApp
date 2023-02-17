@@ -9,7 +9,7 @@ const Landing = () => {
             <Wrapper>
                 <nav>
                     <Logo></Logo>
-                    <h1>speak now or forever hold your peace</h1>
+                    <h1>Vote now or forever hold your peace</h1>
 
                 </nav>
                 <div className="full-screen-container">
