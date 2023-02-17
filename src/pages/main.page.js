@@ -16,7 +16,6 @@ const Main = () => {
 
                 <div className="App">
                 <h3>Vote for your favorite charachter</h3>
-
                     <div className="cards-header">
                         <div className="container">
                             <Card images={images[0]} title={titles[0]} description={descriptions[0]}></Card>
