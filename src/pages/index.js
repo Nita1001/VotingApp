@@ -1,4 +1,5 @@
-import Landing from './Landing.page';
+import Login from './Login.page';
+import Main from './main.page'
 
-export { Landing };
+export { Login, Main };
 

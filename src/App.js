@@ -1,17 +1,22 @@
+import { useState, useEffect } from 'react';
 
-import { Landing } from './pages';
+import { PAGES } from './constants';
+
+import { Login, Main } from './pages';
 
 import './styles/App.css';
 
 function App() {
+  const [page, setPage] = useState('login');
+  const [login, main] = PAGES;
+
   return (
-    <div className="App">
-      <header className="App-header">
-      
-        <Landing></Landing>
-  
-      </header>
-    </div>
+   
+
+        <Main></Main>
+
+        // <Login></Login>
+
   );
 }
 

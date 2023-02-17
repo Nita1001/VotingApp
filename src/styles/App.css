@@ -10,6 +10,14 @@ body {
   margin: 0;
 }
 
+:root {
+  --nav-bg: #212121;
+  --nav-logo: #fff;
+  --nav-link: #9e9e9e;
+  --nav-link-hover: #fff;
+  --nav-border: #424242;
+  --nav-btn: #424242;
+}
 .full-screen-container {
   width: 100vw;
   background-size: cover;
@@ -18,7 +26,6 @@ body {
   align-items: center;
   justify-content: center; */
 }
-
 
 .App {
   text-align: center;
@@ -32,9 +39,66 @@ body {
   flex-direction: row;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: -3;
+}
+
+.cards-header{
+  background-color: #0c0c0c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: -3;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.logo-img{
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 200px;
+  height: 200px;
+}
+.logo-img:hover{
+  transform: scale(1.2);
+}
+
+
+
+.img1 {
+  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img2 {
+  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img3 {
+  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-btn {
+  background-color: var(--nav-btn);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}

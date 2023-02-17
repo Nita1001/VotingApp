@@ -1,16 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.main`
-img{
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 200px;
-  height: 200px;
-}
-img:hover{
-  transform: scale(1.2);
-}
+
 nav {
     width: 100vw;
     margin: 0 auto;
@@ -27,7 +18,6 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
 
 .login-container {
   background-color: hsla(286, 65%, 62%, 0.395);
