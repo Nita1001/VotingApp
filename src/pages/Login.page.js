@@ -7,7 +7,7 @@ import { FaUser } from 'react-icons/fa';
 import { Logo, Input, Button } from '../components';
 import Wrapper from '../styles/styled/Login.styled';
 
-const Login = ({ setPage }) => {
+const Login = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(false);
 
