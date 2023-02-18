@@ -6,7 +6,6 @@ const Card = ({ classes, title, description }) => {
 
   const cardClass = 'card';
   const cardContentContainer = 'card-content-container';
-  const thisRef = '#';
 
   return (
     <div className='card'>
