@@ -9,7 +9,7 @@ const userData = localStorage.getItem('userData') ? JSON.parse(localStorage.getI
 
 function App() {
   const [page, setPage] = useState('login');
-  const [admin, login, main] = PAGES;
+  const [login, main] = PAGES;
 
     useEffect(() => {
       if (!userData) {

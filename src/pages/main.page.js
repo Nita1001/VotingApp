@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { PAGES } from '../constants'
 
-import { Navbar, Card, UsersList } from "../components"
+import { Navbar, Card } from "../components"
 import Wrapper from "../styles/styled/Main.styled"
 
 const [login] = PAGES;
