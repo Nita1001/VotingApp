@@ -81,7 +81,7 @@ const Wrapper = styled.section`
     flex-direction: column;
     width: 100%;
     padding: 2px 16px;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
 } 
 .card-content-container:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -96,7 +96,16 @@ h3 {
 .char-btn{
   width: 8rem;
   text-align: center;
+  z-index: 51;
+}
+.char-votes{
+  display: flex;
+  flex-direction: column;
 }
 
+.char-votes h3{
+  margin: 0;
+  color: grey;
+}
 `;
 export default Wrapper;

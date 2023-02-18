@@ -18,7 +18,7 @@ const Navbar = ({setUser}) => {
                     <div><div><UserLogo></UserLogo>Noa</div></div>
                 </div>
                 <h3>Vote for your favorite character</h3>
-                <Button className='nav-btn' type='button' label='log out' handleLogout={handleLogout} />
+                <Button className='nav-btn' type='button' label='log out' handleClick={handleLogout} />
             </div>
         </Wrapper>
 
