@@ -1,5 +1,5 @@
 
-const Input = ({ type, name, value, label, handleInput, error, message}) => {
+const Input = ({ type, name, value, label, handleInput, error, message }) => {
     return (
         <div className="input-group">
             <label htmlFor={name}>{label || name}</label>

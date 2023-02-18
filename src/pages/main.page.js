@@ -20,11 +20,11 @@ const Main = ({ setPage }) => {
             setPage(login);
         }
     }, [setPage, user]);
-  
+
     return (
         <Wrapper>
             <main className='dashboard'>
-                <Navbar setUser={setUser}/>
+                <Navbar setUser={setUser} />
             </main>
             <div className=''>
                 <div className="hero-section">
