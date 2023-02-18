@@ -29,6 +29,7 @@ const Wrapper = styled.nav`
 }
 .nav-3 {
   justify-content: space-between;
+  
 }
 /* LOGOUT button */
 .nav-btn {
@@ -38,6 +39,10 @@ const Wrapper = styled.nav`
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
+}
+h3{
+  font-size: 1.2rem;
+  color: white;
 }
 `;
 export default Wrapper;

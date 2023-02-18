@@ -2,22 +2,23 @@
 import { Button } from '../components';
 
 
-const Card = ({images, title, description}) => {
+const Card = ({ classes, title, description }) => {
 
   const cardClass = 'card';
-  const cardContainer = 'card-container';
+  const cardContentContainer = 'card-content-container';
   const thisRef = '#';
-  
-  return (
 
-    <div className={cardClass}>
-      <div className={images} />
-      <div className={cardContainer}>
-        <h3><b>{title}</b></h3>
-        <p>{description}</p>
-        <p>
-          <Button type='button' label='vote' className='nav-btn'></Button>
-        </p>
+  return (
+    <div className='card'>
+      <div className={cardClass}>
+        <div className={classes} />
+        <div className={cardContentContainer}>
+          <div>
+            <h3><b>{title}</b></h3>
+            <p>{description}</p>
+          </div>
+            <Button type='button' label='vote' className='char-btn nav-btn'></Button>
+        </div>
       </div>
     </div>
 

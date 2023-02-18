@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
 }
@@ -8,6 +8,23 @@
 html,
 body {
   margin: 0;
+} */
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  height: 100%;
 }
 
 :root {
@@ -17,7 +34,28 @@ body {
   --nav-link-hover: #fff;
   --nav-border: #424242;
   --nav-btn: #424242;
+
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 130rem;
 }
+
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+  z-index: -1;
+}
+
 .full-screen-container {
   width: 100vw;
   background-size: cover;
@@ -42,58 +80,45 @@ body {
   z-index: -3;
 }
 
-.cards-header{
+.cards-header {
   background-color: #0c0c0c;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   font-size: calc(10px + 2vmin);
   color: white;
-  z-index: -3;
+  max-width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.logo-img{
+.logo-img {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 200px;
   height: 200px;
 }
-.logo-img:hover{
+.logo-img:hover {
   transform: scale(1.2);
 }
 
-
-
 .img1 {
-  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/src/assets/images/InosukeHashibira.png");
+  margin-bottom: 5rem;
 }
 .img2 {
-  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/src/assets/images/ObanaiIguro.png");
+  margin-bottom: 5rem;
 }
 .img3 {
-  background-image: url("/src/assets/images/Demon-Slayer-PNG-High-Quality-Image.png");
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/src/assets/images/TanjiroKamado.png");
+  margin-bottom: 5rem;
+  margin-right: 0;
 }
-
+.img4 {
+  background-image: url("/src/assets/images/KyojuroRengoku.png");
+  margin-bottom: 5rem;
+  margin-right: 0;
+}
 .nav-btn {
   background-color: var(--nav-btn);
   border: none;

@@ -1,4 +1,4 @@
-export const users = [
+const users = [
     {
       id: "7hZ2Q8cE7V",
       name: 'Tomas Smith',
@@ -273,3 +273,5 @@ export const users = [
       email: 'anna.johnson@gmail.com'
     }
   ];
+
+  export default users;
