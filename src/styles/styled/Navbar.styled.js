@@ -18,7 +18,7 @@ const Wrapper = styled.nav`
   padding: 20px 30px;
   color: var(--nav-color);
   /* border-bottom: var(--nav-border) solid 1px; */
-  
+  z-index: 10;
 }
 .nav-logo {
   display: flex;
