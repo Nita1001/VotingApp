@@ -13,8 +13,8 @@ const Main = ({ setPage }) => {
     const [user, setUser] = useState(userData);
     const descriptions = ["Inosuke Hashibira", "Obanai Iguro", "Tanjiro Kamado", "Kyojuro Rengoku"];
     const classes = ["card__background img1", "card__background img2", "card__background img3", "card__background img4"];
-    const title = "Demon Slayer";
-    console.log('user', user);
+    const title = "Demon Slayer"; 
+
     useEffect(() => {
         if (!user) {
             setPage(login);
