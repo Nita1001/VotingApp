@@ -8,7 +8,6 @@ const Card = ({ votes, onClick, classes, title, description }) => {
   const cardClass = 'card';
   const cardContentContainer = 'card-content-container';
 
-
   return (
     <div className='card'>
       <div className={cardClass}>

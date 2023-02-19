@@ -10,8 +10,12 @@ import users from './mock/Data'
 
 import demons from './mock/Demons'
 
-localStorage.setItem('demons', JSON.stringify(demons));
 
+
+// const demonsData = localStorage.getItem('demons') === null ? localStorage.setItem('demons', JSON.stringify(demons)) : localStorage.getItem('demons');
+if(!(localStorage.getItem('demons'))){
+  localStorage.setItem('demons', JSON.stringify(demons));
+}
 
 const massagedData = users.map((user) => {
   return {...user, voted: false};
