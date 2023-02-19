@@ -4,7 +4,7 @@ import Button from './Button.component';
 
 import Wrapper from '../styles/styled/Navbar.styled'
 
-const Navbar = ({setUser}) => {
+const Navbar = ({userName ,setUser}) => {
 
     const handleLogout = () => {
         setUser('');
@@ -15,7 +15,7 @@ const Navbar = ({setUser}) => {
         <Wrapper>
             <div className='nav nav-3'>
                 <div className='nav-logo'>
-                    <div><div><UserLogo></UserLogo>Noa</div></div>
+                    <div><div><UserLogo></UserLogo>{userName}</div></div>
                 </div>
                 <h3>Vote for your favorite character</h3>
                 <Button className='nav-btn' type='button' label='log out' handleClick={handleLogout} />

@@ -5,6 +5,20 @@ import { PAGES } from './constants';
 import { Login, Main } from './pages';
 
 import './styles/App.css';
+
+import users from './mock/Data'
+
+import demons from './mock/Demons'
+
+localStorage.setItem('demons', JSON.stringify(demons));
+
+
+const massagedData = users.map((user) => {
+  return {...user, voted: false};
+})
+
+localStorage.setItem('users', JSON.stringify(massagedData));
+
 const userData = localStorage.getItem('userData') ? JSON.parse(localStorage.getItem('userData')) : null;
 
 function App() {

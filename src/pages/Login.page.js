@@ -7,10 +7,15 @@ import { FaUser } from 'react-icons/fa';
 import { Logo, Input, Button } from '../components';
 import Wrapper from '../styles/styled/Login.styled';
 
+
+
 const Login = () => {
+
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(false);
-
+    
+    const users = JSON.parse(localStorage.getItem('users'));
+    
     const {
         value: email,
         error: emailError,
@@ -27,23 +32,31 @@ const Login = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-
         setIsLoading(true);
 
-        if ( !email || validateEmail(email) || !password) {
+
+        if ( !email || validateEmail(email)) {
             setIsLoading(false);
             setError(true);
             handleEmailBlur();
             handlePasswordBlur();
             return;
         } else {
-            setError(false);
-            localStorage.setItem('userData', JSON.stringify({ email, password }));
 
-            setTimeout(() => {
-                window.location.reload(false);
-            }, 2000);
+            const validEmail = users.find((user) => user.email === email)
+            const validPassword = (validEmail.password === password);
+            if(validPassword && !(validEmail.voted)){
+                setError(false);
+                localStorage.setItem('userData', JSON.stringify(validEmail));
+                setTimeout(() => {
+                    window.location.reload(false);
+                }, 2000);
+            } else {
+                return;
+            }
         }
+
+    
     };
 
     return (
@@ -58,7 +71,7 @@ const Login = () => {
 
                         <div className="full-screen-container">
                             <div className="login-container">
-                                <h3 className="login-title"><FaUser></FaUser> Login</h3>
+                                <h3 className="login-title"><FaUser></FaUser> Sign In</h3>
                                 <form onSubmit={onSubmit} className='form'>
                                     <Input 
                                     handleInput={handleEmailChange} 
